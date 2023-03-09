@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pomodoro Timer</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="timer-container">
+		<h1>Pomodoro Timer</h1>
+		<div class="timer">
+			<span id="minutes">25</span>:<span id="seconds">00</span>
+		</div>
+		<div class="buttons">
+			<button id="start-btn">Start</button>
+			<button id="reset-btn">Reset</button>
+		</div>
+		<div class="options">
+			<label for="session-length">Session Length:</label>
+			<select name="session-length" id="session-length">
+				<option value="25" selected>25 minutes</option>
+				<option value="30">30 minutes</option>
+				<option value="45">45 minutes</option>
+				<option value="60">60 minutes</option>
+			</select>
+			<label for="break-length">Break Length:</label>
+			<select name="break-length" id="break-length">
+				<option value="5">5 minutes</option>
+				<option value="10" selected>10 minutes</option>
+				<option value="15">15 minutes</option>
+				<option value="20">20 minutes</option>
+			</select>
+			<label for="mode">Mode:</label>
+			<select name="mode" id="mode">
+				<option value="light" selected>Light</option>
+			</select>
+		</div>
+		<audio id="beep">
+			<source src="beep.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+
+	<script src="javascript.js"></script>
+</body>
+</html>
